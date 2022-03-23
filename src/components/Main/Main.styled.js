@@ -14,7 +14,7 @@ const rotate = keyframes`
 export const StyledMain = styled(motion.div)`
     background: ${props => props.theme.body};
     width: 100vw;
-    height: ${props => props.height}px;
+    height: ${props => props.height};
     position: relative;
     overflow: hidden;
 

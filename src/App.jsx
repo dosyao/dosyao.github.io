@@ -29,7 +29,12 @@ const App = () => {
   
   useEffect(() => {
     const handleResize = () => {
-      setHeight(window.innerHeight);
+      if (window.innerHeight === window.screen.height && navigator.userAgent.match(/instagram/i)) {
+        setHeight('100vh');
+        return;
+      }
+      
+      setHeight(`${window.innerHeight}px`);
     }
 
     window.addEventListener('resize', handleResize);

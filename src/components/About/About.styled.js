@@ -17,7 +17,7 @@ const float = keyframes`
 export const StyledAbout = styled(motion.div)`
     background-color: ${props => props.theme.body};
     width: 100vw;
-    height: ${props => props.height}px;
+    height: ${props => props.height};
     position: relative;
     overflow: hidden;
 
