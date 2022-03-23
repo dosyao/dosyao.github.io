@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Newspaper Web",
+        "description": "A complex PWA application in Next.js, TailwindCSS and ASP.NET API",
+        "tags": ["nextjs", "react", "tailwind"],
+        "demo": "http://newspaper-web.vercel.app",
+        "github": "https://github.com/dosyao/newspaper-web"     
+    },
+    {
+        "id": 2,
+        "name": "Ecommerce Ruletka Shop",
+        "description": "Online store Roulette in Next.js with I18next, Redux and ThailwindCSS.",
+        "tags": ["react", "redux", "nextjs", "typescript", "tailwind", "i18next"],
+        "demo": "https://ruletka-shop-puce.vercel.app",
+        "github": "https://github.com/dosyao/ruletka-shop"
+    },
+    {
+        "id": 3,
+        "name": "Simple Uber Clone",
+        "description": "A simple React Native application with Navigation, Google Maps and ThailwindCSS",
+        "tags": ["react","react-native","thailwind", "react-navigation"],
+        "demo": "#",
+        "github": "https://github.com/dosyao/uber-clone" 
+    },
+    {
+        "id": 4,
+        "name": "Simple Spotify Clone",
+        "description": "Simple web application in Next 12 with Spotify Web API, Recoil and ThailwindCSS",
+        "tags": ["nextjs", "react", "tailwind", "typescript", "recoil"],
+        "demo": "https://spotify-clone-dosyao.vercel.app",
+        "github": "https://github.com/dosyao/spotify-clone"    
+    }
+]
