@@ -33,6 +33,7 @@ const App = () => {
     }
 
     window.addEventListener('resize', handleResize);
+    window.onresize = handleResize;
     handleResize();
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -44,7 +45,7 @@ const App = () => {
       <GlobalStyles />
       <ThemeProvider theme={lightTheme}>
         <Suspense fallback={<Loading />}>
-          <HeightContext.Provider state={height}>
+          <HeightContext.Provider value={height}>
           <Soundbar />
           <AnimatePresence exitBeforeEnter>
             <Switch location={location} key={location.pathname}>
