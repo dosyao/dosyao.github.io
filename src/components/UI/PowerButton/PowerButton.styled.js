@@ -17,6 +17,7 @@ export const StyledPowerButton = styled.button`
     align-items: center;
     z-index: 3;
     cursor: pointer;
+    color: ${props => props.theme.text};
 
     &:hover {
         background-color: rgba(0, 255, 0, 0.4);

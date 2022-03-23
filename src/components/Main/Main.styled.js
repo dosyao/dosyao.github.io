@@ -14,7 +14,7 @@ const rotate = keyframes`
 export const StyledMain = styled(motion.div)`
     background: ${props => props.theme.body};
     width: 100vw;
-    height: 100vh;
+    height: ${props => props.height}px;
     position: relative;
     overflow: hidden;
 
@@ -66,6 +66,7 @@ export const StyledMain = styled(motion.div)`
             position: absolute;
             top: ${props => props.isShow ? "85%" : "50%"};
             left: ${props => props.isShow ? "92%" : "50%"};
+            color: ${props => props.theme.text};
             transform: translate(-50%, -50%);
             border: none;
             outline: none;
@@ -75,7 +76,7 @@ export const StyledMain = styled(motion.div)`
             flex-direction: column;
             align-items: center;
             transition: all 1s ease;
-
+    
             & > *:first-child {
                 animation: ${rotate} infinite 1.5s linear;
             }
@@ -115,7 +116,7 @@ export const StyledMain = styled(motion.div)`
             text-decoration: none;
 
             @media only screen and (max-width: 50em) {
-                text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
+                text-shadow: ${(props) => (props.isShow ? "0 0 4px #000" : "none")};
             }
         }
 
@@ -129,7 +130,7 @@ export const StyledMain = styled(motion.div)`
             justify-content: space-evenly;
 
             .about {
-                color: ${props => props.isShow ? props.theme.body : props.theme.text};
+                color: ${props => props.aboutShow ? props.theme.body : props.theme.text};
                 text-decoration: none;
                 z-index: 1;
             }

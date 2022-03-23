@@ -22,7 +22,9 @@ const Main = () => {
         <Suspense fallback={<Loading />}>
             <StyledMain
                 isShow={isShow}
+                height={window.innerHeight}
                 isMqShow={mq && isShow}
+                aboutShow={!mq && isShow}
                 key='modal'
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
