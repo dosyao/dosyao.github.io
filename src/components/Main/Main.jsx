@@ -5,6 +5,7 @@ import { ABOUT, SKILLS, WORK } from '../../constants/routes';
 import Loading from '../UI/Loading';
 import Intro from './Intro';
 import { StyledMain } from './Main.styled';
+import { useHeight } from '../../utils';
 
 const Logo = lazy(() => import('../UI/Logo'));
 const PowerButton = lazy(() => import('../UI/PowerButton'));
@@ -12,6 +13,7 @@ const SocialIcons = lazy(() => import('../UI/SocialIcons'));
 const YingYangIcon = lazy(() => import('./YingYangIcon'));
 
 const Main = () => {
+    const height = useHeight();
     const mq = window.matchMedia('(max-width: 50em)').matches;
     const [isShow, setShow] = useState(false);
     const [path, setPath] = useState('');
@@ -22,7 +24,7 @@ const Main = () => {
         <Suspense fallback={<Loading />}>
             <StyledMain
                 isShow={isShow}
-                height={window.innerHeight}
+                height={height}
                 isMqShow={mq && isShow}
                 aboutShow={!mq && isShow}
                 key='modal'
