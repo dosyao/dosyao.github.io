@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": true,
+  "homepage": "http://dosyao.github.io",
   "dependencies": {
     "framer-motion": "^4.1.17",
     "locomotive-scroll": "^4.1.1",
@@ -17,7 +18,9 @@
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",
-    "start": "node server.js"
+    "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
