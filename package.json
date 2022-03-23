@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "http://dosyao.github.io",
+  "homepage": "https://dosyao.github.io",
   "dependencies": {
     "framer-motion": "^4.1.17",
     "locomotive-scroll": "^4.1.1",
